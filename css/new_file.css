@@ -1,0 +1,109 @@
+/*默认清理样式*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h5,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+ol,ul{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size: 100%;font-weight: normal;}
+body{font:12px/1.5 'microsoft yahei',tahoma,arial,'Hiragino Sans GB',����,sans-serif;}
+.clearfix:after{visibility: hidden;display: block;font-size: 0;content: '';clear: both;height: 0;}
+.clearfix{zoom:1;}
+.text-ellipsis{white-space: nowrap;/*���ò�����*/text-overflow: ellipsis;overflow: hidden;}
+/*************/
+body,div,span,img,p,h4{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: "微软雅黑";
+}
+#G-lightbox-mask{
+	position:fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+	/*兼顾ie*/
+	fliter:alpha(opacity:50%);
+	z-index: 1000;
+	display: none;
+}
+/*hack ie6技术*/
+*html #G-lightbox-mask{
+	position: absolute;
+}
+#G-lightbox-popup{
+	position: fixed;
+	left: 50%;
+	top: 0;
+	margin-left: -350px;
+	width: 690px;
+	height: 394px;
+	display: none;
+	z-index: 1001;
+}
+*html #G-lightbox-popup{
+	position: absolute;
+}
+.lightbox-pic-view{
+	position: relative;
+	border: 5px solid #fff;
+	border-radius: 3px;
+	background:#fff url(../icon/loading.gif) no-repeat center center;
+	overflow: hidden;
+}
+.lightbox-btn{
+	position: absolute;
+	top: 0;
+	width: 40%;
+	height: 100%;
+	z-index: 1;
+	background-color:transparent;/*ie6*/
+}
+.lightbox-prev-btn{
+	left: 0;
+	background:url(../icon/transparent.png) repeat left top;/*ie6*/
+}
+.lightbox-next-btn{
+	right: 0;
+	background:url(../icon/transparent.png) repeat left right;/*ie6*/
+}
+.lightbox-prev-btn-show{
+	background: url(../icon/prev.png) no-repeat left center;
+	cursor: pointer;
+}
+.lightbox-next-btn-show{
+	background: url(../icon/next.png) no-repeat right center;
+	cursor: pointer;
+}
+.lightbox-image{
+	display: block;
+}
+.lightbox-pic-caption{
+	position: relative;
+	top: -60px;
+	margin: 0 5px;
+	background-color:rgba(0,0,0,0.5);
+	z-index: 2;
+	cursor: pointer;
+	background: url(../icon/opacity.png) repeat left top;/*ie6*/
+}
+.lightbox-caption-area{
+	padding: 10px 5px;
+	color: #fff;
+}
+.lightbox-of-index{
+	color: #999;
+}
+.lightbox-close-btn{
+	position: absolute;
+	right: 10px;
+	top: 13px;
+	width: 27px;
+	height: 27px;
+	background: url(../icon/close.png) no-repeat center center;
+}
+.disabled{
+	display:none;
+}
